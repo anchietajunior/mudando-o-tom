@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mailson JS</title>
+</head>
+<body style="height: 20000px">
+  <h1 id="tom">C</h1>
+  <button id="botao1">Aumentar o tom</button>
+  <button id="botao2">Diminuir o tom</button>
+
+  <script>
+    // var, const, let
+    // Tipos de dados Array (lista), Integer (Inteiro), Float (Decimal)
+    // Eventos no DOM (Document Object Model)
+    // Capturar elementos (clicks e botao) -> Ok
+    // Criar Eventos no Dom através do addEventListener
+    // Estruturas condicionais com if e else
+    const toms = ["C", "D", "E", "F", "G", "A", "B"]
+    let posicao = 0
+    const nomeDoTom = document.getElementById('tom')
+    const proximosTons = document.getElementById('proximos-toms')
+    const botao1 = document.getElementById('botao1')
+    const botao2 = document.getElementById('botao2')
+    // Adicionar eventos para os elements
+    botao1.addEventListener('click', function() {
+      posicao = posicao + 1
+
+      if(posicao > 6) {
+        posicao = 0
+      }
+
+      // proximosTons.innerText = ''
+
+      // toms.forEach(function(tom) {
+      //   if(tom > toms[posicao]) {
+      //     proximosTons.append(tom + ",")
+      //   }
+      // })
+
+      nomeDoTom.innerText = toms[posicao]
+    })
+
+    botao2.addEventListener('click', function() {
+      posicao = posicao - 1
+
+      if(posicao < 0) {
+        posicao = 6
+      }
+
+      nomeDoTom.innerText = toms[posicao]
+    })
+  </script>
+</body>
+</html>
