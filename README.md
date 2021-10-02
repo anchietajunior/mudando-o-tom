@@ -1,6 +1,6 @@
-- [] var, const, let
-- [] Tipos de dados Array (lista), Integer (Inteiro), Float (Decimal)
-- [] Eventos no DOM (Document Object Model)
+- [ ] var, const, let
+- [ ] Tipos de dados Array (lista), Integer (Inteiro), Float (Decimal)
+- [ ] Eventos no DOM (Document Object Model)
 - [x] Capturar elementos (clicks e botao) -> Ok
 - [x] Criar Eventos no Dom através do addEventListener
 - [x] Estruturas condicionais com if e else
